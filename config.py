@@ -1,7 +1,6 @@
 # Safe version: no hardcoded secret is stored in the source code.
 # The value should come from an environment variable or GitHub Secret.
 
-AWS_ACCESS_KEY_ID="AKIAFAKEEXAMPLEKEYID"
-AWS_SECRET_ACCESS_KEY="FAKESECRETEXAMPLE1234567890"
-
+import os
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 
